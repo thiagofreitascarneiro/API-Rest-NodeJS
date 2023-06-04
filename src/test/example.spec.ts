@@ -13,6 +13,7 @@ afterAll( async () => {
 test('o usuário consegue criar uma nova transação', async () => {
     await request(app.server)
         .post('/transactions')
+        .set('Cookie', 'sessionId=9c9b7e3e-fa2a-4d5a-a012-fdc242bedf04')
         .send({ 
             title: 'New trasaction',
             amount: 5000,
