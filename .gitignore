@@ -2,12 +2,11 @@
 node_modules/
 
 # database
-db/app.db
-db/test.db
+db/*.db
 
 #environment
 .env
 .env.test
 
 #build
-dist
+build
